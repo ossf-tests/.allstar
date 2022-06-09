@@ -1,4 +1,1 @@
-optConfig:
-  optInRepos:
-  - scorecard-check-dangerous-workflow-e2e
-action: issue
+baseConfig: ossf-tests/allstar-central-config
