@@ -1,3 +1,1 @@
-optConfig:
-  optOutStrategy: true
-issueFooter: Staging deploy of Allstar for testing, see https://github.com/ossf-tests/.allstar for config.
+baseConfig: ossf-tests/allstar-central-config
