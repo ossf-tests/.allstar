@@ -1,0 +1,7 @@
+optConfig:
+  optOutStrategy: true
+action: issue
+checks:
+- Signed-Releases
+- CI-Tests
+- CII-Best-Practices
