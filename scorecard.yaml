@@ -4,4 +4,3 @@ action: issue
 checks:
 - Signed-Releases
 - CI-Tests
-- CII-Best-Practices
