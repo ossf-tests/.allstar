@@ -2,7 +2,7 @@ optConfig:
   optOutStrategy: true
 action: issue
 groups:
-  - name: "All repos"
+  - name: "All allstar-actions-* test repos"
     repos:
       - name: "allstar-actions-*"
     rules:
@@ -18,6 +18,11 @@ groups:
         actions:
           - name: "gradle/wrapper-validation-action"
             version: "< 1.0.0"
+      - name: "Deny Node.js tooling Actions"
+        method: deny
+        actions:
+          - name: "actions/setup-node"
+          - name: "completely/fakeaction"
   - name: "Go repos"
     repos:
       - language:
