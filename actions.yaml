@@ -45,3 +45,5 @@ groups:
             version: ">= 1.0.2"
           - name: "Mushus/golangci-linter"
             version: ">= v1.1.2"
+          - name: "github/super-linter"
+            version: ">= 4"
