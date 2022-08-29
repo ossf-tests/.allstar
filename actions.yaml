@@ -20,6 +20,7 @@ groups:
             version: "< 1.0.0"
       - name: "Deny Node.js tooling Actions"
         method: deny
+        priority: high
         actions:
           - name: "actions/setup-node"
           - name: "completely/fakeaction"
@@ -34,6 +35,7 @@ groups:
     rules:
       - name: "Require that Go repos use lint Action"
         method: "require"
+        priority: medium
         requireAll: false
         mustPass: true
         actions:
@@ -45,6 +47,7 @@ groups:
             version: ">= v1.1.2"
       - name: "Go build"
         method: "require"
+        priority: medium
         mustPass: true
         actions:
           - name: actions/setup-go
