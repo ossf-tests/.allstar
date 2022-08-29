@@ -33,7 +33,7 @@ groups:
           - exclude:
               - name: "allstar-actions-*"
     rules:
-      - name: "Require that Go repos use lint Action"
+      - name: "Require that Go repos use a lint Action"
         method: "require"
         priority: medium
         requireAll: false
@@ -45,9 +45,3 @@ groups:
             version: ">= 1.0.2"
           - name: "Mushus/golangci-linter"
             version: ">= v1.1.2"
-      - name: "Go build"
-        method: "require"
-        priority: medium
-        mustPass: true
-        actions:
-          - name: actions/setup-go
