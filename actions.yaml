@@ -34,7 +34,7 @@ groups:
               - name: "allstar-actions-*"
     rules:
       - name: "Require that Go repos use a lint Action"
-        method: "require"
+        method: require
         priority: medium
         requireAll: false
         mustPass: true
@@ -47,3 +47,16 @@ groups:
             version: ">= v1.1.2"
           - name: "github/super-linter"
             version: ">= 4"
+  - name: "Version tag, not release test repo"
+    repos:
+      - name: "allstar-actions-no-release"
+    rules:
+      - name: "Allowlist good Actions"
+        method: allow
+        priority: medium
+        actions:
+          - name: actions/checkout
+          - name: Arduino-CI/action
+            version: ">= 0.1.0"
+      - name: "Deny default"
+        method: deny
