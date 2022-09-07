@@ -6,18 +6,17 @@ groups:
     repos:
       - name: "allstar-actions-*"
     rules:
+      - name: "Allow trusted Actions"
+        method: allow
+        priority: high
+        actions:
+          - name: "is/trusted"
       - name: "Deny old Gradle Wrapper validation Action versions"
         method: deny
         priority: high
         actions:
           - name: "gradle/wrapper-validation-action"
             version: "< 1.0.4"
-      - name: "Deny very very old Gradle Wrapper validation Action versions"
-        method: deny
-        priority: critical
-        actions:
-          - name: "gradle/wrapper-validation-action"
-            version: "< 1.0.0"
       - name: "Deny Node.js tooling Actions"
         method: deny
         priority: high
