@@ -1,6 +1,6 @@
 optConfig:
   optOutStrategy: true
-action: issue
+action: log
 checks:
 - Signed-Releases
 - CI-Tests
