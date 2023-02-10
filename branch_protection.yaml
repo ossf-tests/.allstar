@@ -1,0 +1,4 @@
+optConfig:
+  optInRepos:
+  - allstar-gradle-wrapper
+action: issue
