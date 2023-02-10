@@ -1,4 +1,7 @@
 optConfig:
   optInRepos:
   - allstar-gradle-wrapper
-action: issue
+action: fix
+requireCodeOwnerReviews: true
+enforceOnAdmins: true
+requireSignedCommits: true
